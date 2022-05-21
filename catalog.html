@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="index.html" class="list-item-link">
+              <img src="#" alt="Логотип" class="main-logo">
+            </a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="list-item-link">Главная</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="list-item-link">О Седоне</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="list-item-link">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="second-list">
+          <li class="second-list-item">
+            <a href="#" class="second-list-link">
+              <img src="#" alt="Поиск" class="second-list-icon">
+            </a>
+          </li>
+          <li class="second-list-item">
+            <a href="#" class="second-list-link">
+              <img src="#" alt="Лайк" class="second-list-icon">
+            </a>
+          </li>
+          <li class="second-list-item">
+            <a href="#" class="second-list-link">Вход</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="catalog">
+      <section class="catalog-search">
+        <h1 class="catalog-header">Гостиницы Седоны</h1>
+        <p class="breadcrumbs">
+          <a href="index.html" class="breadcrumbs-link">
+            <img src="#" alt="Иконка" class="breadcrumbs-icon">
+          </a>
+          <a href="catalog.html" class="breadcrumbs-link">Гостиницы</a>
+        </p>
+        <form action="https://echo.htmlacademy.ru/courses" id="catalog-search-form" class="catalog-search-form" method="post">
+          <ul class="catalog-search-list">
+            <li class="catalog-search-item">
+              <h2 class="catalog-item-header">Инфраструктура:</h2>
+              <label for="catalog-search-bass">
+                <input type="checkbox" checked name="Бассейн" class="catalog-item-input" id="catalog-search-bass">
+                <span>Бассейн</span>
+              </label>
+              <label for="catalog-search-parking">
+                <input type="checkbox" checked name="Парковка" class="catalog-item-input" id="catalog-search-parking">
+                <span>Парковка</span>
+              </label>
+              <label for="catalog-search-input">
+                <input type="checkbox" name="Wi-Fi" class="catalog-item-input" id="catalog-search-input">
+                <span>Wi-Fi</span>
+              </label>
+            </li>
+            <li class="catalog-search-item">
+              <h2 class="catalog-item-header">Тип Жилья:</h2>
+              <label for="catalog-search-hotel">
+                <input type="radio" checked name="Гостиница" class="catalog-item-input" id="catalog-search-hotel">
+                <span>Гостиница</span>
+              </label>
+              <label for="catalog-search-motel">
+                <input type="radio" name="Мотель" class="catalog-item-input" id="catalog-search-motel">
+                <span>Мотель</span>
+              </label>
+              <label for="catalog-search-app">
+                <input type="radio" name="Апартаменты" class="catalog-item-input" id="catalog-search-app">
+                <span>Апартаменты</span>
+              </label>
+            </li>
+            <li class="catalog-search-item">
+              <h2 class="catalog-item-header">Стоимость, Р:</h2>
+              <label for="catalog-search-min">
+                <input type="checkbox" checked name="Бассейн" class="catalog-item-input" id="catalog-search-min">
+                <span>Бассейн</span>
+              </label>
+              <label for="catalog-search-max">
+                <input type="checkbox" checked name="Парковка" class="catalog-item-input" id="catalog-search-max">
+                <span>Парковка</span>
+              </label>
+              <label for="catalog-search-ch">
+                <input type="checkbox" name="Wi-Fi" class="catalog-item-input" id="catalog-search-ch">
+                <span>Wi-Fi</span>
+              </label>
+            </li>
+            <li class="catalog-search-item">
+              <input type="submit" class="submit-button">
+              <input type="reset" class="reset-button">
+            </li>
+          </ul>
+        </form>
+      </section>
+
+
+
+
+      <section class="subscribe">
+        <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
+        <p class="subscribe-info">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form action="https://echo.htmlacademy.ru/courses" method="post" id="subscribe-form" class="subscribe-form">
+          <label for="subscribe-input" class="subscribe-label">
+            <input type="text" class="subscribe-input" id="subscribe-input" placeholder="Ваш e-mail" name="email" required form="subscribe-form">
+          </label>
+          <input type="submit" value="Подписаться" class="subscribe-form-button">
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://vk.com/htmlacademy" class="social-link">
+            <img src="#" alt="Иконка VK" class="social-icon">
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://t.me/htmlacademy" class="social-link">
+            <img src="#" alt="Иконка Telegram" class="social-icon">
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
+            <img src="#" alt="Иконка Youtube" class="social-icon">
+          </a>
+        </li>
+      </ul>
+      <address class="address">
+        <a href="tel:+781281212" class="address-link">+7(812)812-12-12</a>
+      </address>
+      <a href="https://htmlacademy.ru/" class="footer-link">
+        <img src="#" alt="Логотип" class="footer-logo">
+      </a>
+    </footer>
+  </body>
+</html>
