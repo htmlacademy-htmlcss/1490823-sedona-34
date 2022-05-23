@@ -102,11 +102,11 @@
           </ul>
         </form>
       </section>
-      <section class="result">
-        <h2 class="result-header">Найдено гостиниц:</h2>
-        <p class="result-info">38</p>
+      <section class="cards-view">
+        <h2 class="cards-view-header">Найдено гостиниц:</h2>
+        <p class="cards-view-info">38</p>
         <form action="https://echo.htmlacademy.ru/courses" class="hotel-sort" id="hotel-sort" method="post">
-          <select class="hotel-select" name="hotel-select">
+          <select class="hotel-select" name="hotel-select" form="hotel-sort">
             <option class="hotel-select-type" value="hotel-select-cheap">Сначала дешёвые</option>
             <option class="hotel-select-type">Сначала дорогие</option>
           </select>
@@ -128,8 +128,6 @@
             </button>
           </li>
         </ul>
-      </section>
-      <section class="cards">
         <ul class="cards-list">
           <li class="cards-item">
             <a href="#" class="card-item-link">
@@ -176,9 +174,24 @@
             <p class="cards-hotel-range">Рейтинг: 5,0</p>
           </li>
         </ul>
+        <ul class="cards-pages-list">
+          <li class="cards-pages-item">1</li>
+          <li class="cards-pages-item">2</li>
+          <li class="cards-pages-item">3</li>
+          <li class="cards-pages-item">4</li>
+          <li class="cards-pages-item">...</li>
+          <li class="cards-pages-item">10</li>
+        </ul>
+        <p class="cards-pages-info">Гостиниц на странице:</p>
+        <form action="https://echo.htmlacademy.ru/courses" id="cards-pages-form" class="cards-pages-form" method=post>
+          <select name="cards-pages-select" id="cards-pages-select" class="cards-pages-select" form="cards-pages-form">
+            <option class="hotel-select-type">4</option>
+            <option class="hotel-select-type">1</option>
+            <option class="hotel-select-type">2</option>
+            <option class="hotel-select-type">3</option>
+          </select>
+        </form>
       </section>
-
-
       <section class="subscribe">
         <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
         <p class="subscribe-info">
