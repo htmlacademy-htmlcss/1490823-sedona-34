@@ -46,8 +46,8 @@
             <legend class="catalog-item-legend">Инфраструктура:</legend>
             <ul class="catalog-list-intro">
               <li class="catalog-item-intro">
-                <label for="catalog-search-bass">
-                  <input type="checkbox" checked name="swimming-pool" class="catalog-item-input" id="catalog-search-bass">
+                <label for="swimming-pool">
+                  <input type="checkbox" checked name="swimming-pool" class="catalog-item-input" id="swimming-pool">
                   <span>Бассейн</span>
                 </label>
               </li>
@@ -104,20 +104,18 @@
           </fieldset>
           <fieldset class="catalog-search-item">
             <legend class="visually-hidden">Вывод предложения отелей</legend>
-            <input type="submit" class="submit-button">
-            <input type="reset" class="reset-button">
+            <button type="submit" class="submit-button">Применить</button>
+            <button type="reset" class="reset-button">Сбросить</button>
           </fieldset>
         </form>
       </section>
       <section class="cards-view">
         <h2 class="cards-view-header">Найдено гостиниц:</h2>
         <p class="cards-view-info">38</p>
-        <form action="https://echo.htmlacademy.ru/courses" class="hotel-sort" id="hotel-sort" method="post">
-          <select class="hotel-select" name="hotel-select" form="hotel-sort" aria-label="Сортировка">
-            <option class="hotel-select-type" value="hotel-select-cheap">Сначала дешёвые</option>
-            <option class="hotel-select-type" value="hotel-select-expensive">Сначала дорогие</option>
-          </select>
-        </form>
+        <select class="hotel-select" aria-label="Сортировка">
+          <option class="hotel-select-type" value="hotel-select-cheap">Сначала дешёвые</option>
+          <option class="hotel-select-type" value="hotel-select-expensive">Сначала дорогие</option>
+        </select>
         <ul class="cards-list-view">
           <li class="cards-item-view">
             <button class="cards-view-btn visually-hidden">Карточки</button>
@@ -204,14 +202,12 @@
           </li>
         </ul>
         <p class="cards-pages-info">Гостиниц на странице:</p>
-        <form action="https://echo.htmlacademy.ru/courses" id="cards-pages-form" class="cards-pages-form" method=post>
-          <select name="cards-pages-select" id="cards-pages-select" class="cards-pages-select" form="cards-pages-form" aria-label="Количество">
-            <option value="4" class="hotel-select-type">4</option>
-            <option value="1" class="hotel-select-type">1</option>
-            <option value="2" class="hotel-select-type">2</option>
-            <option value="3" class="hotel-select-type">3</option>
-          </select>
-        </form>
+        <select name="cards-pages-select" class="cards-pages-select" aria-label="Вывод на страницу">
+          <option value="4" class="hotel-select-type">4</option>
+          <option value="8" class="hotel-select-type">8</option>
+          <option value="20" class="hotel-select-type">20</option>
+          <option value="50" class="hotel-select-type">50</option>
+        </select>
       </section>
       <section class="subscribe">
         <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
@@ -219,10 +215,9 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form action="https://echo.htmlacademy.ru/courses" method="post" id="subscribe-form" class="subscribe-form">
-          <label for="subscribe-input" class="subscribe-label">
-            <input type="email" class="subscribe-input" id="subscribe-input" placeholder="Ваш e-mail" name="email" required form="subscribe-form">
-          </label>
-          <input type="submit" value="Подписаться" class="subscribe-form-button">
+          <label for="subscribe-input" class="subscribe-label"></label>
+          <input type="email" class="subscribe-input" id="subscribe-input" placeholder="Ваш e-mail" name="email" required form="subscribe-form">
+          <button type="submit" class="subscribe-form-button">Пописаться</button>
         </form>
       </section>
     </main>
