@@ -7,35 +7,29 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <ul class="nav-list">
+        <a href="#" class="main-nav-logo">
+          <img src="#" alt="Логотип Седона" class="nav-logo-image">
+        </a>
+        <ul class="main-nav-list">
           <li class="nav-list-item">
-            <a href="index.html" class="list-item-link">
-              <img src="#" alt="Логотип Седона" class="main-logo">
-            </a>
+            <a href="#" class="nav-list-link">Главная</a>
           </li>
           <li class="nav-list-item">
-            <a href="index.html" class="list-item-link">Главная</a>
+            <a href="index.html#about-sedona" class="nav-list-link-link">О Седоне</a>
           </li>
           <li class="nav-list-item">
-            <a href="index.html" class="list-item-link">О Седоне</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="catalog.html" class="list-item-link">Гостиницы</a>
+            <a href="catalog.html" class="nav-list-link">Гостиницы</a>
           </li>
         </ul>
         <ul class="nav-user-list">
           <li class="user-list-item">
-            <a href="catalog.html" class="second-list-link">
-              <img src="#" alt="Поиск" class="second-list-icon">
-            </a>
+            <a href="modal.html" class="user-list-link">Поиск</a>
           </li>
           <li class="user-list-item">
-            <a href="#" class="second-list-link">
-              <img src="#" alt="Избранное" class="second-list-icon">
-            </a>
+            <a href="#" class="user-list-link visually-hidden">Избранное</a>
           </li>
           <li class="user-list-item">
-            <a href="catalog.html" class="second-list-link">Хочу сюда!</a>
+            <a href="catalog.html" class="user-list-link">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -44,10 +38,8 @@
       <section class="catalog-search">
         <h1 class="catalog-header">Гостиницы Седоны</h1>
         <p class="breadcrumbs">
-          <a href="index.html" class="breadcrumbs-link">
-            <img src="#" alt="Иконка" class="breadcrumbs-icon">
-          </a>
-          <a href="catalog.html" class="breadcrumbs-link">Гостиницы</a>
+          <a href="index.html" class="breadcrumbs-link visually-hidden">Главная страница</a>
+          <span class="breadcrumbs-link">Гостиницы</span>
         </p>
         <form action="https://echo.htmlacademy.ru/courses" id="catalog-search-form" class="catalog-search-form" method="post">
           <fieldset class="catalog-search-item">
@@ -126,30 +118,26 @@
             <option class="hotel-select-type" value="hotel-select-expensive">Сначала дорогие</option>
           </select>
         </form>
-        <ul class="list-view">
-          <li class="list-view-item">
-            <button class="list-view-btn">
-              <img src="#"  alt="Иконка" class="list-view-img">
-            </button>
+        <ul class="cards-list-view">
+          <li class="cards-item-view">
+            <button class="cards-view-btn visually-hidden">Карточки</button>
           </li>
-          <li class="list-view-item">
-            <button class="list-view-btn">
-              <img src="#"  alt="Иконка" class="list-view-img">
-            </button>
+          <li class="cards-item-view">
+            <button class="cards-view-btn visually-hidden">Слайдер</button>
           </li>
-          <li class="list-view-item">
-            <button class="list-view-btn">
-              <img src="#"  alt="Иконка" class="list-view-img">
-            </button>
+          <li class="cards-item-view">
+            <button class="cards-view-btn visually-hidden">Список</button>
           </li>
         </ul>
         <ul class="cards-list">
           <li class="cards-item">
             <a href="#" class="card-item-link">
-              <img src="#" alt="Фото отеля" class="card-item-img">
+              <img src="#" alt="Фото отеля Amara Resort & Spa" class="card-item-img">
+            </a>
+            <a href="#" class="card-item-link">
               <h3 class="cards-item-header">Amara Resort & Spa</h3>
             </a>
-            <p class="card-hotel-type">Гостиница</p>
+            <p class="cards-hotel-type">Гостиница</p>
             <b class="cards-hotel-price">от 4000 Р</b>
             <button class="cards-hotel-more">Подробно</button>
             <button class="cards-hotel-favorite">В избранное</button>
@@ -157,10 +145,12 @@
           </li>
           <li class="cards-item">
             <a href="#" class="card-item-link">
-              <img src="#" alt="Фото отеля" class="card-item-img">
+              <img src="#" alt="Фото отеля Villas at Poco Diablo" class="card-item-img">
+            </a>
+            <a href="#" class="card-item-link">
               <h3 class="cards-item-header">Villas at Poco Diablo</h3>
             </a>
-            <p class="card-hotel-type">Гостиница</p>
+            <p class="cards-hotel-type">Гостиница</p>
             <b class="cards-hotel-price">от 5000 Р</b>
             <button class="cards-hotel-more">Подробно</button>
             <button class="cards-hotel-favorite">В избранном</button>
@@ -168,10 +158,12 @@
           </li>
           <li class="cards-item">
             <a href="#" class="card-item-link">
-              <img src="#" alt="Фото отеля" class="card-item-img">
+              <img src="#" alt="Фото отеля Desert Quail Inn" class="card-item-img">
+            </a>
+            <a href="#" class="card-item-link">
               <h3 class="cards-item-header">Desert Quail Inn</h3>
             </a>
-            <p class="card-hotel-type">Гостиница</p>
+            <p class="cards-hotel-type">Гостиница</p>
             <b class="cards-hotel-price">от 2500 Р</b>
             <button class="cards-hotel-more">Подробно</button>
             <button class="cards-hotel-favorite">В избранное</button>
@@ -179,34 +171,36 @@
           </li>
           <li class="cards-item">
             <a href="#" class="card-item-link">
-              <img src="#" alt="Фото отеля" class="card-item-img">
+              <img src="#" alt="Фото отеля GreenTree Inn" class="card-item-img">
+            </a>
+            <a href="#" class="card-item-link">
               <h3 class="cards-item-header">GreenTree Inn</h3>
             </a>
-            <p class="card-hotel-type">Гостиница</p>
+            <p class="cards-hotel-type">Гостиница</p>
             <b class="cards-hotel-price">от 1500 Р</b>
             <button class="cards-hotel-more">Подробно</button>
             <button class="cards-hotel-favorite">В избранное</button>
             <b class="cards-hotel-range">Рейтинг: 5,0</b>
           </li>
         </ul>
-        <ul class="cards-pages-list">
-          <li class="cards-pages-item">
-            <a href="#" class="cards-pages-link">1</a>
+        <ul class="cards-show-list">
+          <li class="cards-show-item">
+            <a href="#" class="cards-show-link">1</a>
           </li>
-          <li class="cards-pages-item">
-            <a href="#" class="cards-pages-link">2</a>
+          <li class="cards-show-item">
+            <a href="#" class="cards-show-link">2</a>
           </li>
-          <li class="cards-pages-item">
-            <a href="#" class="cards-pages-link">3</a>
+          <li class="cards-show-item">
+            <a href="#" class="cards-show-link">3</a>
           </li>
-          <li class="cards-pages-item">
-            <a href="#" class="cards-pages-link">4</a>
+          <li class="cards-show-item">
+            <a href="#" class="cards-show-link">4</a>
           </li>
-          <li class="cards-pages-item">
-            <a href="#" class="cards-pages-link">...</a>
+          <li class="cards-show-item">
+            <a href="#" class="cards-show-link">...</a>
           </li>
-          <li class="cards-pages-item">
-            <a href="#" class="cards-pages-link">10</a>
+          <li class="cards-show-item">
+            <a href="#" class="cards-show-link">10</a>
           </li>
         </ul>
         <p class="cards-pages-info">Гостиниц на странице:</p>
@@ -235,19 +229,13 @@
     <footer class="main-footer">
       <ul class="social-list">
         <li class="social-item">
-          <a href="https://vk.com/htmlacademy" class="social-link">
-            <img src="#" alt="Иконка VK" class="social-icon">
-          </a>
+          <a href="https://vk.com/htmlacademy" class="social-link visually-hidden">VK</a>
         </li>
         <li class="social-item">
-          <a href="https://t.me/htmlacademy" class="social-link">
-            <img src="#" alt="Иконка Telegram" class="social-icon">
-          </a>
+          <a href="https://t.me/htmlacademy" class="social-link visually-hidden">Telegram</a>
         </li>
         <li class="social-item">
-          <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
-            <img src="#" alt="Иконка Youtube" class="social-icon">
-          </a>
+          <a href="https://www.youtube.com/user/htmlacademyru" class="social-link visually-hidden">Youtube</a>
         </li>
       </ul>
       <address class="address">
