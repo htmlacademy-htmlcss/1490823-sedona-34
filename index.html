@@ -23,7 +23,7 @@
         </ul>
         <ul class="nav-user-list">
           <li class="user-list-item">
-            <a href="#" class="user-list-link">Поиск</a>
+            <a href="#modal" class="user-list-link visually-hidden">Поиск</a>
           </li>
           <li class="user-list-item">
             <a href="#" class="user-list-link visually-hidden">Избранное</a>
@@ -61,7 +61,6 @@
             </div>
             <ul class="reasons-inner-list">
               <li class="reasons-inner-item">
-                <img src="#" alt="Иконка" class="reason-inner-icon">
                 <h3 class="reasons-inner-header">
                   Жильё
                 </h3>
@@ -71,7 +70,6 @@
                 </p>
               </li>
               <li class="reasons-inner-item">
-                <img src="#" alt="Иконка" class="reason-inner-icon">
                 <h3 class="reasons-inner-header">
                   Еда
                 </h3>
@@ -80,7 +78,6 @@
                 </p>
               </li>
               <li class="reasons-inner-item">
-                <img src="#" alt="Иконка" class="reason-inner-icon">
                 <h3 class="reasons-inner-header">
                   Сувениры
                 </h3>
@@ -166,5 +163,33 @@
         <img src="#" alt="Логотип Академии" class="footer-logo">
       </a>
     </footer>
+    <section class="modal visually-hidden" id="modal">
+        <h2 class="modal-header">
+          Поиск гостиницы в Седоне
+        </h2>
+        <button class="modal-close">X</button>
+        <form action="https://echo.htmlacademy.ru/courses" class="modal-form" method="post" id="modal-form">
+          <label for="modal-date-field-in">
+            <span class="modal-date-info">Дата Заезда:</span>
+            <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
+          </label>
+          <label for="modal-date-field-out">
+            <span class="modal-date-info">Дата Выезда:</span>
+            <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
+          </label>
+          <label for="modal-adult">
+            <span class="modal-date-info">Взрослые</span>
+            <input type="text" value="2" class="modal-date-field-in" id="modal-adult" placeholder="2" name="adult" required>
+          </label>
+          <label for="modal-children">
+            <span class="modal-date-info">Дети</span>
+            <input type="text" value="1" class="modal-date-field-in" id="modal-children" placeholder="1" name="children">
+          </label>
+          <p class="modal-info">
+            На эти даты есть свободные номера. Пока есть.
+          </p>
+          <button class="modal-btn">Найти</button>
+        </form>
+      </section>
   </body>
 </html>

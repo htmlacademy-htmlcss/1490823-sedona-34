@@ -7,12 +7,12 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <a href="#" class="main-nav-logo">
+        <a href="index.html" class="main-nav-logo">
           <img src="#" alt="Логотип Седона" class="nav-logo-image">
         </a>
         <ul class="main-nav-list">
           <li class="nav-list-item">
-            <a href="#" class="nav-list-link">Главная</a>
+            <a href="index.html" class="nav-list-link">Главная</a>
           </li>
           <li class="nav-list-item">
             <a href="index.html#about-sedona" class="nav-list-link-link">О Седоне</a>
@@ -23,7 +23,7 @@
         </ul>
         <ul class="nav-user-list">
           <li class="user-list-item">
-            <a href="#" class="user-list-link">Поиск</a>
+            <a href="#modal" class="user-list-link">Поиск</a>
           </li>
           <li class="user-list-item">
             <a href="#" class="user-list-link visually-hidden">Избранное</a>
@@ -118,13 +118,13 @@
         </select>
         <ul class="cards-list-view">
           <li class="cards-item-view">
-            <button class="cards-view-btn visually-hidden">Карточки</button>
+            <a href="#" class="cards-view-btn visually-hidden">Карточки</a>
           </li>
           <li class="cards-item-view">
-            <button class="cards-view-btn visually-hidden">Слайдер</button>
+            <a href="#" class="cards-view-btn visually-hidden">Слайдер</a>
           </li>
           <li class="cards-item-view">
-            <button class="cards-view-btn visually-hidden">Список</button>
+            <a href="#" class="cards-view-btn visually-hidden">Список</a>
           </li>
         </ul>
         <ul class="cards-list">
@@ -240,5 +240,33 @@
         <img src="#" alt="Логотип Академии" class="footer-logo">
       </a>
     </footer>
+    <section class="modal visually-hidden" id="modal">
+      <h2 class="modal-header">
+        Поиск гостиницы в Седоне
+      </h2>
+      <button class="modal-close">X</button>
+      <form action="https://echo.htmlacademy.ru/courses" class="modal-form" method="post" id="modal-form">
+        <label for="modal-date-field-in">
+          <span class="modal-date-info">Дата Заезда:</span>
+          <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
+        </label>
+        <label for="modal-date-field-out">
+          <span class="modal-date-info">Дата Выезда:</span>
+          <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
+        </label>
+        <label for="modal-adult">
+          <span class="modal-date-info">Взрослые</span>
+          <input type="text" value="2" class="modal-date-field-in" id="modal-adult" placeholder="2" name="adult" required>
+        </label>
+        <label for="modal-children">
+          <span class="modal-date-info">Дети</span>
+          <input type="text" value="1" class="modal-date-field-in" id="modal-children" placeholder="1" name="children">
+        </label>
+        <p class="modal-info">
+          На эти даты есть свободные номера. Пока есть.
+        </p>
+        <button class="modal-btn">Найти</button>
+      </form>
+    </section>
   </body>
 </html>
