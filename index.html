@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <a href="#" class="main-nav-logo">
-          <img src="#" alt="Логотип Седона" class="nav-logo-image">
+          <img src="images/logo.svg" alt="Логотип Седона" class="nav-logo-image">
         </a>
         <ul class="main-nav-list">
           <li class="nav-list-item">
@@ -39,7 +39,8 @@
         <h1 class="visually-hidden">
           Добро пожаловать в Седону!
         </h1>
-        <img src="#" alt="Добро пожаловать в Седону" class="main-section-image">
+        <img src="images/index-background.jpg" width="1200" height="485" alt="Добро пожаловать в Седону" class="main-section-image">
+        <img src="images/welcome.svg" width="458" height="352" alt="Надпись Welcome to the gorgeous" class="main-image-inner">
       </section>
       <section class="reasons-section">
         <h2 class="reasons-header">
@@ -58,6 +59,7 @@
               <p class="reasons-block-info">
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
+              <img src="images/sedona-town.jpg" width="800" height="384" alt="Городок Седона" class="sedona-town-img">
             </div>
             <ul class="reasons-inner-list">
               <li class="reasons-inner-item">
@@ -95,6 +97,7 @@
             <p class="reasons-block-info">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
+            <img src="images/devil-bridge.jpg" width="800" height="384" alt="Мост дъявола" class="devil-bridge-img">
           </li>
           <li class="reasons-section-item">
             <h3 class="reasons-block-header">
@@ -160,36 +163,39 @@
         <a href="tel:+781281212" class="address-link">+7(812)812-12-12</a>
       </address>
       <a href="https://htmlacademy.ru/" class="footer-link">
-        <img src="#" alt="Логотип Академии" class="footer-logo">
+        <img src="images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип Академии" class="footer-logo">
       </a>
     </footer>
+
+                                              <!--  Модальное окошко  -->
+
     <section class="modal visually-hidden" id="modal">
-        <h2 class="modal-header">
-          Поиск гостиницы в Седоне
-        </h2>
-        <button class="modal-close">X</button>
-        <form action="https://echo.htmlacademy.ru/courses" class="modal-form" method="post" id="modal-form">
-          <label for="modal-date-field-in">
-            <span class="modal-date-info">Дата Заезда:</span>
-            <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
-          </label>
-          <label for="modal-date-field-out">
-            <span class="modal-date-info">Дата Выезда:</span>
-            <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
-          </label>
-          <label for="modal-adult">
-            <span class="modal-date-info">Взрослые</span>
-            <input type="text" value="2" class="modal-date-field-in" id="modal-adult" placeholder="2" name="adult" required>
-          </label>
-          <label for="modal-children">
-            <span class="modal-date-info">Дети</span>
-            <input type="text" value="1" class="modal-date-field-in" id="modal-children" placeholder="1" name="children">
-          </label>
-          <p class="modal-info">
-            На эти даты есть свободные номера. Пока есть.
-          </p>
-          <button class="modal-btn">Найти</button>
-        </form>
-      </section>
+      <h2 class="modal-header">
+        Поиск гостиницы в Седоне
+      </h2>
+      <button class="modal-close">X</button>
+      <form action="https://echo.htmlacademy.ru/courses" class="modal-form" method="post" id="modal-form">
+        <label for="modal-date-field-in">
+          <span class="modal-date-info">Дата Заезда:</span>
+          <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
+        </label>
+        <label for="modal-date-field-out">
+          <span class="modal-date-info">Дата Выезда:</span>
+          <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
+        </label>
+        <label for="modal-adult">
+          <span class="modal-date-info">Взрослые</span>
+          <input type="text" value="2" class="modal-date-field-in" id="modal-adult" placeholder="2" name="adult" required>
+        </label>
+        <label for="modal-children">
+          <span class="modal-date-info">Дети</span>
+          <input type="text" value="1" class="modal-date-field-in" id="modal-children" placeholder="1" name="children">
+        </label>
+        <p class="modal-info">
+          На эти даты есть свободные номера. Пока есть.
+        </p>
+        <button class="modal-btn">Найти</button>
+      </form>
+    </section>
   </body>
 </html>
