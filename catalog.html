@@ -3,42 +3,49 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Седона, каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-nav">
-        <a href="index.html" class="main-nav-logo">
-          <img src="images/logo.svg" width="139" height="70" alt="Логотип Седона" class="nav-logo-image">
-        </a>
-        <ul class="main-nav-list">
-          <li class="nav-list-item">
-            <a href="index.html" class="nav-list-link">Главная</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="index.html#about-sedona" class="nav-list-link-link">О Седоне</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="catalog.html" class="nav-list-link">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="nav-user-list">
-          <li class="user-list-item">
-            <a href="#modal" class="user-list-link">Поиск</a>
-          </li>
-          <li class="user-list-item">
-            <a href="#" class="user-list-link visually-hidden">Избранное</a>
-          </li>
-          <li class="user-list-item">
-            <a href="catalog.html" class="user-list-link">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="index.html" class="main-nav-logo">
+        <img src="images/logo.svg" alt="Логотип Седона" class="nav-logo-image">
+      </a>
+      <ul class="main-nav-list">
+        <li class="nav-list-item">
+          <a href="index.html" class="nav-list-link">Главная</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="index.html#about-sedona" class="nav-list-link-link">О Седоне</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#" class="nav-list-link">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="nav-user-list">
+        <li class="user-list-item">
+          <a href="#modal" class="user-list-link-search">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="user-list-item">
+          <a href="#" class="user-list-link-favorite">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="user-list-item">
+          <a href="catalog.html" class="user-list-link">Хочу сюда!</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <main class="main-catalog">
       <section class="catalog-search">
         <h1 class="catalog-header">Гостиницы Седоны</h1>
         <p class="breadcrumbs">
-          <a href="index.html" class="breadcrumbs-link visually-hidden">Главная страница</a>
+          <a href="index.html" class="breadcrumbs-link">
+            <span class="visually-hidden">Главная страница</span>
+          </a>
           <span class="breadcrumbs-link">Гостиницы</span>
         </p>
         <form action="https://echo.htmlacademy.ru/courses" id="catalog-search-form" class="catalog-search-form" method="post">
@@ -118,13 +125,19 @@
         </select>
         <ul class="cards-list-view">
           <li class="cards-item-view">
-            <a href="#" class="cards-view-btn visually-hidden">Карточки</a>
+            <a href="#" class="cards-view-btn">
+              <span class="visually-hidden">Карточки</span>
+            </a>
           </li>
           <li class="cards-item-view">
-            <a href="#" class="cards-view-btn visually-hidden">Слайдер</a>
+            <a href="#" class="slider-view-btn">
+              <span class="visually-hidden">Слайдер</span>
+            </a>
           </li>
           <li class="cards-item-view">
-            <a href="#" class="cards-view-btn visually-hidden">Список</a>
+            <a href="#" class="list-view-btn">
+              <span class="visually-hidden">Список</span>
+            </a>
           </li>
         </ul>
         <ul class="cards-list">
@@ -221,25 +234,31 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer">
-      <ul class="social-list">
-        <li class="social-item">
-          <a href="https://vk.com/htmlacademy" class="social-link visually-hidden">VK</a>
-        </li>
-        <li class="social-item">
-          <a href="https://t.me/htmlacademy" class="social-link visually-hidden">Telegram</a>
-        </li>
-        <li class="social-item">
-          <a href="https://www.youtube.com/user/htmlacademyru" class="social-link visually-hidden">Youtube</a>
-        </li>
-      </ul>
-      <address class="address">
-        <a href="tel:+781281212" class="address-link">+7(812)812-12-12</a>
-      </address>
-      <a href="https://htmlacademy.ru/" class="footer-link">
-        <img src="images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип Академии" class="footer-logo">
-      </a>
-    </footer>
+  <footer class="main-footer">
+    <ul class="social-list">
+      <li class="social-item">
+        <a href="https://vk.com/htmlacademy" class="social-link visually-hidden">
+          <span class="visually-hidden">VK</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="https://t.me/htmlacademy" class="social-link visually-hidden">
+          <span class="visually-hidden">Telegram</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="https://www.youtube.com/user/htmlacademyru" class="social-link visually-hidden">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+    </ul>
+    <address class="address">
+      <a href="tel:+781281212" class="address-link">+7(812)812-12-12</a>
+    </address>
+    <a href="https://htmlacademy.ru/" class="footer-link">
+      <img src="images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип Академии" class="footer-logo">
+    </a>
+  </footer>
 
                                     <!--  Модальное окошко  -->
 
