@@ -1,3 +1,26 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 1.18;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -10,11 +33,34 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.user-list-link-search{
-  display: block;
-  background: url("../images/search.svg") no-repeat;
+.main-nav{
+  display: flex;
+  justify-content: space-between;
 }
-.user-list-link-favorite{
-  display: block;
-  background: url("../images/favorite.svg") no-repeat;
+.main-nav-list{
+  display: flex;
+  list-style: none;
+}
+.nav-list-link{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+}
+.user-list-link{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.main-section{
+  background: url("../images/index-background.jpg") no-repeat;
+}
+.subscribe{
+  background: url("../images/subscribe-background.jpg") no-repeat;
+}
+.catalog-search{
+  background: url("../images/catalog-background.jpg") no-repeat;
 }
