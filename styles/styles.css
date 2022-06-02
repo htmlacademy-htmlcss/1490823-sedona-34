@@ -58,6 +58,12 @@ body{
 .main-section{
   background: url("../images/index-background.jpg") no-repeat;
 }
+.reasons-header{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
 .subscribe{
   background: url("../images/subscribe-background.jpg") no-repeat;
 }
