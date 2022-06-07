@@ -361,12 +361,19 @@ body{
   width: 160px;
   border: none;
   background: #82B3D3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
 }
 .reset-button{
   padding: 14px 0;
   width: 160px;
   background: none;
   border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: inherit;
 }
 .catalog-search-form{
   display: flex;
