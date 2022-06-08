@@ -599,9 +599,15 @@ body{
 .cards-hotel-type{
   width: 140px;
   margin: 0 20px 16px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
 }
 .cards-hotel-price{
   margin: 0 0 16px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
 }
 .cards-hotel-more{
   width: 140px;
@@ -610,6 +616,7 @@ body{
   background: #756157;
   font-size: 16px;
   line-height: 1.25;
+  font-weight: 700;
 }
 .cards-hotel-favorite{
   padding: 9px 0;
@@ -617,6 +624,7 @@ body{
   background: #82B3D3;
   font-size: 16px;
   line-height: 1.25;
+  font-weight: 700;
 }
 .cards-hotel-favorite-active{
   padding: 9px 0;
@@ -624,6 +632,7 @@ body{
   background: #7ab947;
   font-size: 16px;
   line-height: 1.25;
+  font-weight: 700;
 }
 .starring-range{
   width: 90px;
