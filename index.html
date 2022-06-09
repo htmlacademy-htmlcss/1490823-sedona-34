@@ -117,7 +117,7 @@
             </li>
             <li class="reasons-inner-item reasons-section-fourth">
               <h3 class="reasons-block-header">
-                Красивая дорога
+                Красивая<br> дорога
               </h3>
               <p class="reasons-block-info-number">- №4 -</p>
               <p class="reasons-block-info">
@@ -126,7 +126,7 @@
             </li>
             <li class="reasons-inner-item reasons-section-fifth">
               <h3 class="reasons-block-header">
-                Мало туристов
+                Мало<br> туристов
               </h3>
               <p class="reasons-block-info-number">- №5 -</p>
               <p class="reasons-block-info">
@@ -181,28 +181,28 @@
       </footer>
                                     <!--  Модальное окошко  -->
 
-      <section class="modal visually-hidden" id="modal">
-        <h2 class="modal-header">
-          Поиск гостиницы в Седоне
-        </h2>
-        <button class="modal-close">X</button>
+      <section class="modal" id="modal">
+        <div class="modal-wrap">
+          <h2 class="modal-header">
+            Поиск гостиницы в Седоне
+          </h2>
+          <button class="modal-close">
+            <span class="visually-hidden">Кнопка закрыть окно</span>
+          </button>
+        </div>
         <form action="https://echo.htmlacademy.ru/courses" class="modal-form" method="post" id="modal-form">
-          <label for="modal-date-field-in">
-            <span class="modal-date-info">Дата Заезда:</span>
-            <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
-          </label>
-          <label for="modal-date-field-out">
-            <span class="modal-date-info">Дата Выезда:</span>
-            <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
-          </label>
-          <label for="modal-adult">
-            <span class="modal-date-info">Взрослые</span>
-            <input type="text" value="2" class="modal-date-field-in" id="modal-adult" placeholder="2" name="adult" required>
-          </label>
-          <label for="modal-children">
-            <span class="modal-date-info">Дети</span>
-            <input type="text" value="1" class="modal-date-field-in" id="modal-children" placeholder="1" name="children">
-          </label>
+          <label for="modal-date-field-in"></label>
+          <span class="modal-date-info date-info-in">Дата Заезда:</span>
+          <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
+          <label for="modal-date-field-out"></label>
+          <span class="modal-date-info date-info-out">Дата Выезда:</span>
+          <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
+          <label for="modal-adult"></label>
+          <span class="modal-date-info">Взрослые:</span>
+          <input type="text" value="2" class="modal-field-adult" id="modal-adult" placeholder="2" name="adult" required>
+          <label for="modal-children"></label>
+          <span class="modal-date-info">Дети:</span>
+          <input type="text" value="1" class="modal-field-children" id="modal-children" placeholder="1" name="children">
           <p class="modal-info">
             На эти даты есть свободные номера. Пока есть.
           </p>
