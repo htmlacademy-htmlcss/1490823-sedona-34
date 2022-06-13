@@ -194,18 +194,21 @@
           <label for="modal-date-field-in"></label>
           <span class="modal-date-info date-info-in">Дата Заезда:</span>
           <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
+          <p class="modal-info modal-info-color">
+            Мы не можем отправить вас в прошлое.
+          </p>
           <label for="modal-date-field-out"></label>
           <span class="modal-date-info date-info-out">Дата Выезда:</span>
           <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
-          <label for="modal-adult"></label>
-          <span class="modal-date-info">Взрослые:</span>
-          <input type="text" value="2" class="modal-field-adult" id="modal-adult" placeholder="2" name="adult" required>
-          <label for="modal-children"></label>
-          <span class="modal-date-info">Дети:</span>
-          <input type="text" value="1" class="modal-field-children" id="modal-children" placeholder="1" name="children">
           <p class="modal-info">
             На эти даты есть свободные номера. Пока есть.
           </p>
+          <label for="modal-adult"></label>
+          <span class="modal-date-info">Взрослые:</span>
+          <input type="text" value="2" class="modal-field-amount" id="modal-adult" placeholder="2" name="adult" required>
+          <label for="modal-children"></label>
+          <span class="modal-date-info modal-field-children">Дети:</span>
+          <input type="text" value="1" class="modal-field-amount" id="modal-children" placeholder="1" name="children">
           <button class="button modal-btn" type="submit">Найти</button>
         </form>
       </section>
