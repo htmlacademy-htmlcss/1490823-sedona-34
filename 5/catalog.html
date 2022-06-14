@@ -26,7 +26,7 @@
           </ul>
           <ul class="main-nav-list nav-user-list">
             <li class="user-list-item">
-              <a href="#modal" class="user-list-link-search">
+              <a href="index.html#modal" class="user-list-link-search">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
@@ -272,40 +272,6 @@
           <img src="images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип Академии" class="footer-logo">
         </a>
       </footer>
-
-                                    <!--  Модальное окошко  -->
-
-      <section class="modal" id="modal">
-        <div class="modal-wrap">
-          <h2 class="modal-header">
-            Поиск гостиницы в Седоне
-          </h2>
-          <button class="modal-close">
-            <span class="visually-hidden">Кнопка закрыть окно</span>
-          </button>
-        </div>
-        <form action="https://echo.htmlacademy.ru/courses" class="modal-form" method="post" id="modal-form">
-          <label for="modal-date-field-in"></label>
-          <span class="modal-date-info date-info-in">Дата Заезда:</span>
-          <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
-          <p class="modal-info modal-info-color">
-            Мы не можем отправить вас в прошлое.
-          </p>
-          <label for="modal-date-field-out"></label>
-          <span class="modal-date-info date-info-out">Дата Выезда:</span>
-          <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
-          <p class="modal-info">
-            На эти даты есть свободные номера. Пока есть.
-          </p>
-          <label for="modal-adult"></label>
-          <span class="modal-date-info">Взрослые:</span>
-          <input type="text" value="2" class="modal-field-amount" id="modal-adult" placeholder="2" name="adult" required>
-          <label for="modal-children"></label>
-          <span class="modal-date-info modal-field-children">Дети:</span>
-          <input type="text" value="1" class="modal-field-amount" id="modal-children" placeholder="1" name="children">
-          <button class="button modal-btn" type="submit">Найти</button>
-        </form>
-      </section>
     </div>
   </body>
 </html>

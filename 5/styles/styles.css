@@ -16,6 +16,8 @@
   box-sizing: border-box;
 }
 body{
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -45,7 +47,7 @@ body{
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   border-radius: 4px;
   cursor: pointer;
   font-family: inherit;
@@ -157,7 +159,7 @@ body{
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .reasons-section-item{
   display: flex;
@@ -297,7 +299,7 @@ body{
 }
 .subscribe{
   padding: 94px 0;
-  color: #ffffff;
+  color: #FFFFFF;
   background: url("../images/subscribe-background.jpg") no-repeat;
   text-align: center;
 }
@@ -580,7 +582,7 @@ body{
 .list-view-btn{
   width: 48px;
   height: 48px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #E5E5E5;
   background: url("../images/view-list.svg") center no-repeat;
 }
 .cards-list{
@@ -706,6 +708,9 @@ body{
                         /* стили для модального окошка */
 
 .modal{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   max-width: 715px;
   margin: 0 auto;
   text-align: center;
@@ -719,9 +724,11 @@ body{
   text-transform: uppercase;
 }
 .modal-close{
+  display: block;
+  padding: 0;
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 53px;
+  height: 53px;
   border-radius: 100%;
   background: #F2F2F2;
   position: relative;
@@ -745,6 +752,7 @@ body{
   margin-bottom: 63px;
 }
 .modal-form{
+  margin-top: 72px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -795,20 +803,6 @@ body{
   margin-left: 56px;
   margin-right: 44px;
   position: relative;
-}
-.modal-field-children::after{
-  display: block;
-  position: absolute;
-  top: 2px;
-  left: 55px;
-  z-index: 1;
-  text-align: center;
-  content: url("../images/i.svg");
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  background: #83B3D3;
-
 }
 .modal-btn{
   font-family: inherit;
