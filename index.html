@@ -60,74 +60,76 @@
                 <h3 class="reasons-block-header">
                   Настоящий городок
                 </h3>
-                <p class="reasons-section-info">- №1 -</p>
-                <p class="reasons-section-info">
+                <p class="reasons-block-info-number">- №1 -</p>
+                <p class="reasons-block-info">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
                 <img src="images/sedona-town.jpg" width="800" height="384" alt="Городок Седона" class="sedona-town-img">
               <ul class="reasons-inner-list">
-                <li class="reasons-inner-item">
+                <li class="reasons-inner-item inner-item-house">
                   <h3 class="reasons-inner-header">
                     Жильё
                   </h3>
-                  <p class="reasons-section-info">
+                  <p class="reasons-block-info">
                     Рекомендуем пожить в настоящем мотеле,
                     всё как в кино!
                   </p>
                 </li>
-                <li class="reasons-inner-item reason-inner-item-center">
+                <li class="reasons-inner-item inner-item-food">
                   <h3 class="reasons-inner-header">
                     Еда
                   </h3>
-                  <p class="reasons-section-info">
+                  <p class="reasons-block-info">
                     Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                   </p>
                 </li>
-                <li class="reasons-inner-item">
+                <li class="reasons-inner-item inner-item-present">
                   <h3 class="reasons-inner-header">
                     Сувениры
                   </h3>
-                  <p class="reasons-section-info">
+                  <p class="reasons-block-info">
                     Не только китайского, но и настоящего местного производства!
                   </p>
                 </li>
               </ul>
             </li>
             <li class="reasons-section-item section-item-bridge">
-              <h3 class="reasons-block-header">
-                Там есть мост дьявола
-              </h3>
-              <p class="reasons-section-info">- №2 -</p>
-              <p class="reasons-section-info">
-                Да, по нему можно пройти! Если вы осмелитесь, разумеется
-              </p>
               <img src="images/devil-bridge.jpg" width="800" height="384" alt="Мост дъявола" class="devil-bridge-img">
+              <div class="reasons-block">
+                <h3 class="reasons-block-header">
+                  Там есть мост дьявола
+                </h3>
+                <p class="reasons-block-info-number">- №2 -</p>
+                <p class="reasons-block-info">
+                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                </p>
+              </div>
             </li>
-            <li class="reasons-section-item reasons-section-third">
+            <li class="reasons-item-after reasons-section-third">
               <h3 class="reasons-block-header">
                 Небольшая площадь
               </h3>
-              <p class="reasons-section-info">- №3 -</p>
-              <p class="reasons-section-info">
+              <p class="reasons-block-info-number">- №3 -</p>
+              <p class="reasons-block-info">
                 Все достопримечательности находятся очень близко
               </p>
             </li>
-            <li class="reasons-section-item reasons-section-fourth">
+            <li class="reasons-item-after reasons-section-fourth">
               <h3 class="reasons-block-header">
-                Красивая дорога
+                Красивая<br> дорога
               </h3>
-              <p class="reasons-section-info">- №4 -</p>
-              <p class="reasons-section-info">
+              <p class="reasons-block-info-number">- №4 -</p>
+              <p class="reasons-block-info">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
-            <li class="reasons-section-item reasons-section-fifth">
+            <li class="reasons-item-after reasons-section-fifth">
               <h3 class="reasons-block-header">
-                Мало туристов
+                Мало<br> туристов
               </h3>
-              <p class="reasons-section-info">- №5 -</p>
-              <p class="reasons-section-info">
+              <p class="reasons-block-info-number">- №5 -</p>
+              <p class="reasons-block-info">
                 Большинство едет в Гранд Каньон и толпится там
               </p>
             </li>
@@ -146,8 +148,8 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form action="https://echo.htmlacademy.ru/courses" method="post" id="subscribe-form" class="subscribe-form">
-            <label for="subscribe-input" class="subscribe-label"></label>
             <input type="email" class="subscribe-input" id="subscribe-input" placeholder="Ваш e-mail" name="email" required form="subscribe-form">
+            <label for="subscribe-input" class="visually-hidden">Поле для ввода email</label>
             <button type="submit" class="subscribe-form-button">Подписаться</button>
           </form>
         </section>
@@ -179,31 +181,36 @@
       </footer>
                                     <!--  Модальное окошко  -->
 
-      <section class="modal visually-hidden" id="modal">
+      <section class="modal" id="modal">
         <h2 class="modal-header">
           Поиск гостиницы в Седоне
         </h2>
-        <button class="modal-close">X</button>
+        <button class="modal-close">
+          <span class="visually-hidden">Кнопка закрыть окно</span>
+        </button>
         <form action="https://echo.htmlacademy.ru/courses" class="modal-form" method="post" id="modal-form">
-          <label for="modal-date-field-in">
-            <span class="modal-date-info">Дата Заезда:</span>
-            <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
+          <label for="modal-date-field-in" class="modal-date-info date-info-in">
+            Дата заезда:
           </label>
-          <label for="modal-date-field-out">
-            <span class="modal-date-info">Дата Выезда:</span>
-            <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
+          <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
+          <p class="modal-info modal-info-color">
+            Мы не можем отправить вас в прошлое.
+          </p>
+          <label for="modal-date-field-out" class="modal-date-info date-info-out">
+            Дата выезда:
           </label>
-          <label for="modal-adult">
-            <span class="modal-date-info">Взрослые</span>
-            <input type="text" value="2" class="modal-date-field-in" id="modal-adult" placeholder="2" name="adult" required>
-          </label>
-          <label for="modal-children">
-            <span class="modal-date-info">Дети</span>
-            <input type="text" value="1" class="modal-date-field-in" id="modal-children" placeholder="1" name="children">
-          </label>
+          <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
           <p class="modal-info">
             На эти даты есть свободные номера. Пока есть.
           </p>
+          <label for="modal-adult" class="modal-date-info">
+            Взрослые:
+          </label>
+          <input type="text" value="2" class="modal-field-amount" id="modal-adult" placeholder="2" name="adult" required>
+          <label for="modal-children" class="modal-date-info modal-field-children">
+            Дети:
+          </label>
+          <input type="text" value="1" class="modal-field-amount" id="modal-children" placeholder="1" name="children">
           <button class="button modal-btn" type="submit">Найти</button>
         </form>
       </section>

@@ -16,15 +16,19 @@
   box-sizing: border-box;
 }
 body{
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.18;
+  background: #F2F2F2;
 }
 .container{
   max-width: 1200px;
   margin: 0 auto;
+  background: #FFFFFF;
 }
 .visually-hidden {
   position: absolute;
@@ -43,7 +47,7 @@ body{
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   border-radius: 4px;
   cursor: pointer;
   font-family: inherit;
@@ -82,6 +86,24 @@ body{
   padding: 24px 24px;
   background: url("../images/favorite.svg") center no-repeat;
   display: block;
+  position: relative;
+}
+.user-list-link-favorite:after{
+  content: "12";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  z-index: 1;
+  background: #7AB947;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-align: center;
 }
 .nav-user-list{
   padding-left: 25%;
@@ -95,8 +117,20 @@ body{
 }
 .main-section{
   width: 100%;
-  background: url("../images/index-background.jpg") no-repeat;
-  text-align: center;
+  margin-bottom: 63px;
+  background: url("../images/index-background.jpg") center no-repeat;
+  position: relative;
+}
+.main-section::after{
+  display: block;
+  width: 100%;
+  height: 57px;
+  content: "";
+  background: url("../images/divider.svg") center no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 .main-section-image{
   display: block;
@@ -105,7 +139,8 @@ body{
   padding-bottom: 82px;
 }
 .reasons-header{
-  margin: 0;
+  max-width: 620px;
+  margin: 0 auto 31px;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
@@ -124,13 +159,15 @@ body{
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .reasons-section-item{
   display: flex;
+  flex-wrap: wrap;
 }
 .reasons-block{
-  width: 400px;
+  padding: 92px 85px;
+  max-width: 400px;
   background: #82b3d3;
 }
 .reasons-block-header{
@@ -149,33 +186,79 @@ body{
   color: #000000;
 }
 .reasons-inner-header{
-  margin: 0;
+  margin: 0 0 30px 0;
   text-transform: uppercase;
 }
 .reasons-section-info{
+  margin: 0 auto 90px;
+}
+.reasons-block-info{
+  width: 230px;
   margin: 0;
+}
+.reasons-block-info-number{
+  margin: 30px 0;
 }
 .reasons-inner-item{
   width: 400px;
+  padding: 182px 85px 80px;
   background: rgba(131, 179, 211, 0.12);
+  position: relative;
 }
-.reason-inner-item-center{
+.inner-item-food{
   background: none;
 }
-.section-item-bridge{
-  background: #82b3d3;
+.inner-item-house:before{
+  display: block;
+  width: 74px;
+  height: 72px;
+  position: absolute;
+  bottom: 230px;
+  left: 50%;
+  z-index: 1;
+  content: "";
+  background: url("../images/house.svg") center no-repeat;
+  transform: translate(-50%, 0);
 }
-.reasons-section-third{
+.inner-item-food:before{
+  display: block;
+  width: 74px;
+  height: 70px;
+  position: absolute;
+  bottom: 230px;
+  left: 50%;
+  z-index: 1;
+  content: "";
+  background: url("../images/burger.svg") center no-repeat;
+  transform: translate(-50%, 0);
+}
+.inner-item-present:before{
+  display: block;
+  width: 64px;
+  height: 76px;
+  position: absolute;
+  bottom: 230px;
+  left: 50%;
+  z-index: 1;
+  content: "";
+  background: url("../images/present.svg") center no-repeat;
+  transform: translate(-50%, 0);
+}
+.sedona-town-img{
+  width: 66.66%;
+}
+.devil-bridge-img{
+  width: 66.66%;
+}
+.reasons-item-after{
+  width: 400px;
+  padding: 103px 85px;
   background: rgba(131, 179, 211, 0.12);
+  text-align: center;
   color: #000000;
 }
 .reasons-section-fourth{
   background: rgba(131, 179, 211, 0.2);
-  color: #000000;
-}
-.reasons-section-fifth{
-  background: rgba(131, 179, 211, 0.12);
-  color: #000000;
 }
 .search{
   padding-top: 91px;
@@ -203,8 +286,13 @@ body{
 }
 .subscribe{
   padding: 94px 0;
-  color: #ffffff;
+  color: #FFFFFF;
   background: url("../images/subscribe-background.jpg") no-repeat;
+  text-align: center;
+}
+.subscribe-catalog{
+  padding: 94px 0;
+  color: #000000;
   text-align: center;
 }
 .subscribe-header{
@@ -299,7 +387,7 @@ body{
 
 .catalog-search{
   margin-bottom: 65px;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 0 70px 70px;
   background: url("../images/catalog-background.jpg") center no-repeat;
   background-size: cover;
   color: #FFFFFF;
@@ -311,9 +399,22 @@ body{
   line-height: 1.3;
 }
 .catalog-search-item{
-  margin: 0;
-  padding: 0;
   border: 0;
+  padding: 0;
+  margin: 0;
+}
+.catalog-item-housing{
+  margin-left: 70px;
+  margin-right: 175px;
+}
+.catalog-item-price{
+  width: 288px;
+  margin-right: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-item-buttons{
+  padding-top: 60px;
 }
 .breadcrumbs{
   margin: 0 0 40px 0;
@@ -328,14 +429,26 @@ body{
   width: 22px;
   height: 22px;
   background: url("../images/home.svg") center no-repeat;
+  position: relative;
+}
+.breadcrumbs-icon:after{
+  display: block;
+  content: "";
+  width: 6px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  z-index: 1;
+  background: url("../images/arrow-right.svg") center no-repeat;
+  transform: translate(0, -50%);
 }
 .breadcrumbs-link{
   font-size: 16px;
   line-height: 21px;
 }
 .catalog-item-legend{
-  margin-bottom: 30px;
-  margin-right: 70px;
+  margin-bottom: 33px;
   border: none;
   font-weight: 700;
   font-size: 20px;
@@ -348,14 +461,22 @@ body{
 .catalog-item-field{
   font-family: inherit;
   width: 144px;
+  height: 48px;
   border: 2px solid #FFFFFF;
-  border-radius: 4px;
   background: none;
-  padding: 14px;
+  padding: 12px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
   color: #FFFFFF;
+}
+.catalog-field-left{
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  position: relative;
+}
+.catalog-field-right{
+  border-radius: 0 4px 4px 0;
 }
 .catalog-list-intro{
   margin: 0;
@@ -386,6 +507,7 @@ body{
 }
 .catalog-search-form{
   display: flex;
+  flex-wrap: wrap;
 }
 .cards-view{
   padding: 0 70px;
@@ -413,7 +535,7 @@ body{
 .hotel-select{
   margin-right: 81px;
   width: 247px;
-  border: 1px solid #E5E5E5;
+  border: 2px solid #E5E5E5;
   padding: 13px 43px 14px 19px;
   border-radius: 4px;
   font-weight: 400;
@@ -433,7 +555,7 @@ body{
 .cards-view-btn{
   width: 48px;
   height: 48px;
-  border: 1px solid #E5E5E5;
+  border: 2px solid #000000;
   background: url("../images/view-cards.svg") center no-repeat;
 
 }
@@ -441,13 +563,13 @@ body{
   margin: 0 8px;
   width: 48px;
   height: 48px;
-  border: 1px solid #E5E5E5;
+  border: 2px solid #E5E5E5;
   background: url("../images/view-slideshow.svg") center no-repeat;
 }
 .list-view-btn{
   width: 48px;
   height: 48px;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #E5E5E5;
   background: url("../images/view-list.svg") center no-repeat;
 }
 .cards-list{
@@ -460,7 +582,7 @@ body{
 .cards-item{
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   width: 340px;
@@ -477,17 +599,26 @@ body{
   line-height: 1.66;
 }
 .cards-hotel-type{
-  margin: 0;
+  width: 140px;
+  margin: 0 20px 16px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
 }
 .cards-hotel-price{
-  margin: 0;
+  margin: 0 0 16px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
 }
 .cards-hotel-more{
-  padding: 9px 0;
   width: 140px;
+  margin-right: 20px;
+  padding: 9px 0;
   background: #756157;
   font-size: 16px;
   line-height: 1.25;
+  font-weight: 700;
 }
 .cards-hotel-favorite{
   padding: 9px 0;
@@ -495,6 +626,7 @@ body{
   background: #82B3D3;
   font-size: 16px;
   line-height: 1.25;
+  font-weight: 700;
 }
 .cards-hotel-favorite-active{
   padding: 9px 0;
@@ -502,10 +634,11 @@ body{
   background: #7ab947;
   font-size: 16px;
   line-height: 1.25;
+  font-weight: 700;
 }
 .starring-range{
-  margin: 0;
   width: 90px;
+  margin: 0 50px 0 0;
   height: 17px;
   background: url("../images/star.svg") center;
 }
@@ -547,8 +680,8 @@ body{
 .cards-pages-select{
   font-family: inherit;
   width: 160px;
-  border: 1px solid #E5E5E5;
-  padding: 13px 43px 13px 19px;
+  border: 2px solid #E5E5E5;
+  padding: 10px 43px 10px 19px;
   border-radius: 4px;
   font-weight: 400;
   font-size: 18px;
@@ -559,64 +692,112 @@ body{
   margin: 0 50px 0 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                          /* стили для модального окошка */
+                        /* стили для модального окошка */
 
 .modal{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   max-width: 715px;
   margin: 0 auto;
-  text-align: center;
+  padding: 36px;
+  border-radius: 30px;
+  outline: #756157 solid 1px;
 }
 .modal-header{
-  margin: 0;
+  margin: 0 113px 0 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
   text-transform: uppercase;
 }
+.modal-close{
+  display: block;
+  padding: 0;
+  border: none;
+  width: 53px;
+  height: 53px;
+  border-radius: 100%;
+  background: #F2F2F2;
+  position: relative;
+  cursor: pointer;
+}
+.modal-close::after{
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  background: url("../images/close.svg") center no-repeat;
+}
+.modal-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 63px;
+}
+.modal-form{
+  margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .modal-date-info{
+  display: block;
+  width: 119px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.3;
+  margin-right: 36px;
+  text-align: start;
 }
 .modal-date-field-in{
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
   font-family: inherit;
+  background: #F2F2F2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
 }
 .modal-info{
-  margin: 0;
+  margin: 0 0 11px 155px;
+  width: 420px;
   font-size: 16px;
   line-height: 1.3;
+  text-align: start;
+}
+.modal-info-color{
+  color: #FF5757;
+}
+.modal-field-amount{
+  display: block;
+  width: 133px;
+  padding: 14px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+}
+.modal-field-children{
+  width: 54px;
+  margin-left: 56px;
+  margin-right: 44px;
+  position: relative;
 }
 .modal-btn{
+  display: block;
   font-family: inherit;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 12px 0;
   width: 100%;
   max-width: 575px;
