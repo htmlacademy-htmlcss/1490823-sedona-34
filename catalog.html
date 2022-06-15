@@ -98,12 +98,15 @@
             </fieldset>
             <fieldset class="catalog-search-item catalog-item-price">
               <legend class="catalog-item-legend">Стоимость, Р:</legend>
-              <label for="catalog-search-min"></label>
-                <input type="text" pattern="[0-9]{1,5}" name="min-price" value="0" placeholder="0" class="catalog-item-field catalog-field-left" id="catalog-search-min">
-              <label for="catalog-search-max"></label>
+              <label for="catalog-search-min">
+                  <input type="text" pattern="[0-9]{1,5}" name="min-price" value="0" placeholder="0" class="catalog-item-field catalog-field-left" id="catalog-search-min">
+                </label>
+              <label for="catalog-search-max">
                 <input type="text" pattern="[0-9]{1,5}" name="max-price" value="9000" placeholder="9000" class="catalog-item-field catalog-field-right" id="catalog-search-max">
-              <label for="catalog-search-range"></label>
+              </label>
+              <label for="catalog-search-range">
                 <input type="range" min="0" max="9000" step="1" value="7000" id="catalog-search-range">
+              </label>
             </fieldset>
             <fieldset class="catalog-search-item search-item-buttons">
               <legend class="visually-hidden">Вывод предложения отелей</legend>
