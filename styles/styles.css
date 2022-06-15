@@ -12,18 +12,19 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-*{
-  box-sizing: border-box;
+html{
+  height: 100%;
 }
 body{
-  display: flex;
-  flex-direction: column;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.18;
   background: #F2F2F2;
+}
+*{
+  box-sizing: border-box;
 }
 .container{
   max-width: 1200px;
@@ -52,6 +53,7 @@ body{
   cursor: pointer;
   font-family: inherit;
 }
+
 .main-nav{
   display: flex;
   justify-content: flex-start;
@@ -66,6 +68,12 @@ body{
   display: flex;
   align-items: center;
   list-style: none;
+}
+.left-list{
+  flex-grow: 1;
+}
+.nav-user-list{
+  margin-right: 70px;
 }
 .nav-list-item:not(:last-child){
   margin-right: 34px;
@@ -105,9 +113,7 @@ body{
   color: #FFFFFF;
   text-align: center;
 }
-.nav-user-list{
-  padding-left: 25%;
-}
+
 .user-list-btn{
   background: #756157;
   padding: 9px 35px;
