@@ -12,18 +12,19 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-*{
-  box-sizing: border-box;
+html{
+  height: 100%;
 }
 body{
-  display: flex;
-  flex-direction: column;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.18;
   background: #F2F2F2;
+}
+*{
+  box-sizing: border-box;
 }
 .container{
   max-width: 1200px;
@@ -52,6 +53,7 @@ body{
   cursor: pointer;
   font-family: inherit;
 }
+
 .main-nav{
   display: flex;
   justify-content: flex-start;
@@ -64,8 +66,15 @@ body{
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
+}
+.left-list{
+  flex-grow: 1;
+}
+.nav-user-list{
+  margin-right: 70px;
 }
 .nav-list-item:not(:last-child){
   margin-right: 34px;
@@ -105,9 +114,7 @@ body{
   color: #FFFFFF;
   text-align: center;
 }
-.nav-user-list{
-  padding-left: 25%;
-}
+
 .user-list-btn{
   background: #756157;
   padding: 9px 35px;
@@ -314,7 +321,8 @@ body{
 }
 .subscribe-input{
   font-family: inherit;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   padding: 20px;
   font-weight: 400;
   font-size: 18px;
@@ -340,6 +348,7 @@ body{
 .main-footer{
   padding: 0 72px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -349,6 +358,7 @@ body{
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .social-item:not(:last-child){
@@ -515,6 +525,7 @@ body{
 .cards-view-inner{
   margin-bottom: 57px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .cards-view-header{
@@ -655,6 +666,7 @@ body{
   padding: 30px 0;
   border-top: 1px solid #E6E6E6;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .cards-show-list{
@@ -662,6 +674,7 @@ body{
   padding: 0 300px 0 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .cards-show-link{
@@ -772,7 +785,8 @@ body{
 }
 .modal-info{
   margin: 0 0 11px 155px;
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   font-size: 16px;
   line-height: 1.3;
   text-align: start;
