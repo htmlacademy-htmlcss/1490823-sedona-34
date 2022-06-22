@@ -66,6 +66,7 @@ body{
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
 }
@@ -320,7 +321,8 @@ body{
 }
 .subscribe-input{
   font-family: inherit;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   padding: 20px;
   font-weight: 400;
   font-size: 18px;
@@ -346,6 +348,7 @@ body{
 .main-footer{
   padding: 0 72px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -355,6 +358,7 @@ body{
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .social-item:not(:last-child){
@@ -778,7 +782,8 @@ body{
 }
 .modal-info{
   margin: 0 0 11px 155px;
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   font-size: 16px;
   line-height: 1.3;
   text-align: start;
