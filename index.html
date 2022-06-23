@@ -214,6 +214,42 @@
           <button class="button modal-btn" type="submit">Найти</button>
         </form>
       </section>
+
+                                    <!--  Модальное окошко на гридах -->
+
+      <section class="modal-grid">
+        <h2 class="modal-grid-header">
+          Поиск гостиницы в Седоне
+        </h2>
+        <button class="modal-grid-close">
+          <span class="visually-hidden">Кнопка закрыть окно</span>
+        </button>
+        <form action="https://echo.htmlacademy.ru/courses" class="modal-grid-form" method="post" id="modal-grid-form">
+          <label for="modal-grid-date-field-in" class="modal-date-info date-info-in">
+            Дата заезда:
+          </label>
+          <input type="date" class="modal-grid-date-field-in" id="modal-grid-date-field-in" name="date-in" required>
+          <p class="modal-info modal-info-color">
+            Мы не можем отправить вас в прошлое.
+          </p>
+          <label for="modal-grid-date-field-out" class="modal-date-info date-info-out">
+            Дата выезда:
+          </label>
+          <input type="date" class="modal-date-field-in" id="modal-grid-date-field-out" name="date-out" required>
+          <p class="modal-info">
+            На эти даты есть свободные номера. Пока есть.
+          </p>
+          <label for="modal-grid-adult" class="modal-date-info">
+            Взрослые:
+          </label>
+          <input type="text" value="2" class="modal-field-amount" id="modal-grid-adult" placeholder="2" name="adult" required>
+          <label for="modal-grid-children" class="modal-date-info modal-field-children">
+            Дети:
+          </label>
+          <input type="text" value="1" class="modal-field-amount" id="modal-grid-children" placeholder="1" name="children">
+          <button class="button modal-btn" type="submit">Найти</button>
+        </form>
+      </section>
     </div>
   </body>
 </html>
