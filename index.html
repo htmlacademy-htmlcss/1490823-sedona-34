@@ -179,45 +179,10 @@
           <img src="images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип Академии" class="footer-logo">
         </a>
       </footer>
-                                    <!--  Модальное окошко  -->
-
-      <section class="modal" id="modal">
-        <h2 class="modal-header">
-          Поиск гостиницы в Седоне
-        </h2>
-        <button class="modal-close">
-          <span class="visually-hidden">Кнопка закрыть окно</span>
-        </button>
-        <form action="https://echo.htmlacademy.ru/courses" class="modal-form" method="post" id="modal-form">
-          <label for="modal-date-field-in" class="modal-date-info date-info-in">
-            Дата заезда:
-          </label>
-          <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
-          <p class="modal-info modal-info-color">
-            Мы не можем отправить вас в прошлое.
-          </p>
-          <label for="modal-date-field-out" class="modal-date-info date-info-out">
-            Дата выезда:
-          </label>
-          <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
-          <p class="modal-info">
-            На эти даты есть свободные номера. Пока есть.
-          </p>
-          <label for="modal-adult" class="modal-date-info">
-            Взрослые:
-          </label>
-          <input type="text" value="2" class="modal-field-amount" id="modal-adult" placeholder="2" name="adult" required>
-          <label for="modal-children" class="modal-date-info modal-field-children">
-            Дети:
-          </label>
-          <input type="text" value="1" class="modal-field-amount" id="modal-children" placeholder="1" name="children">
-          <button class="button modal-btn" type="submit">Найти</button>
-        </form>
-      </section>
 
                             <!--Модальное окошко на гридах-->
 
-      <section class="modal-grid" id="modal-grid">
+      <section class="modal-grid" id="modal">
         <h2 class="grid-header">
           Поиск гостиницы в Седоне
         </h2>
@@ -243,7 +208,7 @@
             Взрослые:
           </label>
           <input type="text" value="2" class="grid-field-amount" id="grid-adult" placeholder="2" name="adult" required>
-          <label for="grid-children" class="grid-date-info modal-field-children">
+          <label for="grid-children" class="grid-date-info grid-field-children">
             Дети:
           </label>
           <input type="text" value="1" class="grid-field-amount" id="grid-children" placeholder="1" name="children">
