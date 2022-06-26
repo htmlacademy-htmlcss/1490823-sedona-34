@@ -30,8 +30,9 @@
               </a>
             </li>
             <li class="user-list-item">
-              <a href="#" class="user-list-link-favorite">
+              <a href="catalog.html#favorites" class="user-list-link-favorite">
                 <span class="visually-hidden">Избранное</span>
+                <span class="quality-favorite">12</span>
               </a>
             </li>
             <li class="user-list-item">
@@ -179,39 +180,40 @@
           <img src="images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип Академии" class="footer-logo">
         </a>
       </footer>
-                                    <!--  Модальное окошко  -->
 
-      <section class="modal" id="modal">
-        <h2 class="modal-header">
+                                         <!-- Модальное окно -->
+
+      <section class="modal modal-hidden" id="modal">
+        <h2 class="grid-header">
           Поиск гостиницы в Седоне
         </h2>
-        <button class="modal-close">
+        <button class="modal-close-btn">
           <span class="visually-hidden">Кнопка закрыть окно</span>
         </button>
         <form action="https://echo.htmlacademy.ru/courses" class="modal-form" method="post" id="modal-form">
-          <label for="modal-date-field-in" class="modal-date-info date-info-in">
+          <label for="modal-date-field-in" class="modal-text">
             Дата заезда:
           </label>
-          <input type="date" class="modal-date-field-in" id="modal-date-field-in" name="date-in" required>
+          <input type="date" class="modal-date-field" id="modal-date-field-in" name="date-in" required>
           <p class="modal-info modal-info-color">
             Мы не можем отправить вас в прошлое.
           </p>
-          <label for="modal-date-field-out" class="modal-date-info date-info-out">
+          <label for="modal-date-field-out" class="modal-text">
             Дата выезда:
           </label>
-          <input type="date" class="modal-date-field-in" id="modal-date-field-out" name="date-out" required>
+          <input type="date" class="modal-date-field" id="modal-date-field-out" name="date-out" required>
           <p class="modal-info">
             На эти даты есть свободные номера. Пока есть.
           </p>
-          <label for="modal-adult" class="modal-date-info">
+          <label for="modal-adult" class="modal-text">
             Взрослые:
           </label>
           <input type="text" value="2" class="modal-field-amount" id="modal-adult" placeholder="2" name="adult" required>
-          <label for="modal-children" class="modal-date-info modal-field-children">
+          <label for="modal-amount-children" class="modal-text modal-text-children">
             Дети:
           </label>
-          <input type="text" value="1" class="modal-field-amount" id="modal-children" placeholder="1" name="children">
-          <button class="button modal-btn" type="submit">Найти</button>
+          <input type="text" value="1" class="modal-field-amount" id="modal-amount-children" placeholder="1" name="children">
+          <button class="modal-search-btn" type="submit">Найти</button>
         </form>
       </section>
     </div>
