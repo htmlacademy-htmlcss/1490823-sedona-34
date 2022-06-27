@@ -735,9 +735,6 @@ body{
   outline: #E5E5E5 solid 1px;
   border-radius: 30px;
 }
-.modal-hidden{
-  display: none;
-}
 .modal-header{
   margin: 0;
   font-weight: 700;
@@ -768,10 +765,9 @@ body{
 }
 .modal-form{
   width: 100%;
-  max-width: 595px;
   margin: 54px 0;
   display: grid;
-  grid-template-columns: 155px 133px 153px 133px;
+  grid-template-columns: auto 135px 155px 135px;
 }
 .modal-text{
   align-self: center;
@@ -792,8 +788,7 @@ body{
 }
 .modal-info{
   margin: 10px 0;
-  padding-left: 155px;
-  grid-column: 1/-1;
+  grid-column: 2/5;
   font-size: 16px;
   line-height: 1.3;
 }
