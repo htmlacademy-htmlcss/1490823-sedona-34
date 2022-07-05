@@ -208,11 +208,32 @@
           <label for="modal-adult" class="modal-text">
             Взрослые:
           </label>
-          <input type="text" value="2" class="modal-field-amount" id="modal-adult" placeholder="2" name="adult" required>
-          <label for="modal-amount-children" class="modal-text modal-text-children">
-            Дети:
-          </label>
-          <input type="text" value="1" class="modal-field-amount" id="modal-amount-children" placeholder="1" name="children">
+          <div class="modal-wrap">
+            <button class="modal-plus-btn">
+              <span class="visually-hidden">Кнопка добавить количесвто взрослых</span>
+            </button>
+            <input type="text" value="2" class="modal-field-amount" id="modal-adult" placeholder="2" name="adult" required>
+            <button class="modal-minus-btn">
+              <span class="visually-hidden">Кнопка уменьшить количесвто взрослых</span>
+            </button>
+          </div>
+          <div class="modal-wrap">
+            <label for="modal-amount-children" class="modal-text modal-text-children">
+              Дети:
+            </label>
+            <button class="modal-attention-btn">
+              <span class="visually-hidden">Важная информация</span>
+            </button>
+          </div>
+          <div class="modal-wrap">
+            <button class="modal-plus-btn">
+              <span class="visually-hidden">Кнопка добавить количесвто детей</span>
+            </button>
+            <input type="text" value="1" class="modal-field-amount" id="modal-amount-children" placeholder="1" name="children">
+            <button class="modal-minus-btn">
+              <span class="visually-hidden">Кнопка уменьшить количесвто детей</span>
+            </button>
+          </div>
           <button class="modal-search-btn" type="submit">Найти</button>
         </form>
       </section>
