@@ -130,7 +130,6 @@ body{
   color: #FFFFFF;
   text-align: center;
 }
-
 .user-list-btn{
   background: #756157;
   padding: 9px 35px;
@@ -141,11 +140,16 @@ body{
 .user-list-btn:hover{
   background: #615048;
 }
+.user-list-btn:focus{
+  background: #615048;
+}
 .user-list-btn:active{
   background: #756157;
   color: rgb(255, 255, 255, 0.3);
 }
-
+.user-list-btn:disabled{
+  background: #E5E5E5;
+}
 .main-section{
   width: 100%;
   margin-bottom: 63px;
@@ -318,9 +322,15 @@ body{
 .search-link:hover{
   background: #615048;
 }
+.search-link:focus{
+  background: #615048;
+}
 .search-link:active{
   background: #756157;
   color: rgb(255, 255, 255, 0.3);
+}
+.search-link:disabled{
+  background: #E5E5E5;
 }
 .subscribe{
   padding: 94px 0;
@@ -379,9 +389,15 @@ body{
 .subscribe-form-button:hover{
   background: #68A2CA;
 }
+.subscribe-form-button:focus{
+  background: #68A2CA;
+}
 .subscribe-form-button:active{
   background: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+.subscribe-form-button:disabled{
+  background: #E5E5E5;
 }
 .main-footer{
   padding: 0 72px;
@@ -390,7 +406,6 @@ body{
   justify-content: space-between;
   align-items: center;
 }
-
 .social-list{
   margin: 0;
   padding: 0;
@@ -433,9 +448,27 @@ body{
 .address-link:hover{
   color: #756157;
 }
+.address-link:focus{
+  color: #615048;
+}
 .address-link:active{
   color: #756157;
   opacity: 0.3;
+}
+.address-link:disabled{
+  color: #E5E5E5;
+}
+.footer-logo{
+  color: #000000;
+}
+.footer-logo:hover{
+  color: #615048;
+}
+.footer-logo:focus{
+  color: #615048;
+}
+.footer-logo:active{
+  color: rgba(117, 97, 87, 0.3);
 }
 
                           /*  стили для страницы каталога */
@@ -799,7 +832,9 @@ body{
 }
 
                 /***************** Модальное окно *************************/
-
+.modal-hidden{
+  display: none;
+}
 .modal{
   display: flex;
   flex-wrap: wrap;
@@ -808,7 +843,6 @@ body{
   max-width: 715px;
   margin: auto;
   padding: 36px 60px;
-  outline: #E5E5E5 solid 1px;
   border-radius: 30px;
 }
 .modal-header{
@@ -826,6 +860,10 @@ body{
   border-radius: 100%;
   cursor: pointer;
   position: relative;
+  background: #F2F2F2;
+}
+.modal-close-btn:hover{
+  background: #E6E6E6;
 }
 .modal-close-btn::after{
   display: block;
@@ -946,7 +984,7 @@ body{
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  background: #82b3d3;
+  background: #83B3D3;
   color: #FFFFFF;
   text-align: center;
   border: none;
