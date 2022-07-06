@@ -154,6 +154,7 @@ body{
   width: 100%;
   margin-bottom: 63px;
   background: url("../images/index-background.jpg") center no-repeat;
+  background-size: cover;
   position: relative;
 }
 .main-section::after{
@@ -335,7 +336,7 @@ body{
 .subscribe{
   padding: 94px 0;
   color: #FFFFFF;
-  background: url("../images/subscribe-background.jpg") no-repeat;
+  background: url("../images/subscribe-background.jpg") center no-repeat;
   text-align: center;
 }
 .subscribe-catalog{
@@ -400,11 +401,13 @@ body{
   background: #E5E5E5;
 }
 .main-footer{
+  min-height: 120px;
   padding: 0 72px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
 }
 .social-list{
   margin: 0;
@@ -416,27 +419,26 @@ body{
 }
 .social-item:not(:last-child){
   margin-right: 26px;
+  display: flex;
+  align-items: center;
 }
 .social-link{
   display: block;
-  padding: 50px 0;
-}
-.social-link-vk{
-  background: url("../images/vk.svg") center no-repeat;
+  color: #83B3D3;
   width: 24px;
-  height: 14px;
+  height: 18px;
 }
-.social-link-telegram{
-  background: url("../images/telegram.svg") center no-repeat;
-  width: 18px;
-  height: 17px;
+.social-link:hover{
+  color: #68A2CA;
 }
-.social-link-youtube{
-  background: url("../images/youtube.svg") center no-repeat;
-  width: 22px;
-  height: 17px;
+.social-link:focus{
+  color: #68A2CA;
+}
+.social-link:active{
+  color: rgba(104, 162, 202, 0.3);
 }
 .address-link{
+  display: block;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -471,7 +473,7 @@ body{
   color: rgba(117, 97, 87, 0.3);
 }
 
-                          /*  стили для страницы каталога */
+                          /* стили для страницы каталога */
 
 .catalog-search{
   margin-bottom: 65px;
@@ -586,9 +588,15 @@ body{
 .submit-button:hover{
   background: #68A2CA;
 }
+.submit-button:focus{
+  background: #82b3d3;
+}
 .submit-button:active{
   background: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+.submit-button:disabled{
+  background: #E5E5E5;
 }
 .reset-button{
   padding: 14px 0;
@@ -732,9 +740,15 @@ body{
 .cards-hotel-more:hover{
   background: #615048;
 }
+.cards-hotel-more:focus{
+  background: #615048;
+}
 .cards-hotel-more:active{
   background: #756157;
   color: rgb(255, 255, 255, 0.3);
+}
+.cards-hotel-more:disabled{
+  background: #E5E5E5;
 }
 .cards-hotel-favorite{
   padding: 9px 0;
@@ -747,9 +761,15 @@ body{
 .cards-hotel-favorite:hover{
   background: #68A2CA;
 }
+.cards-hotel-favorite:focus{
+  background: #68A2CA;
+}
 .cards-hotel-favorite:active{
   background: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+.cards-hotel-favorite:disabled{
+  background: #E5E5E5;
 }
 .cards-hotel-favorite-active{
   padding: 9px 0;
@@ -762,9 +782,15 @@ body{
 .cards-hotel-favorite-active:hover{
   background: #6C9E42;
 }
+.cards-hotel-favorite-active:focus{
+  background: #6C9E42;
+}
 .cards-hotel-favorite-active:active{
   background: #7AB947;
   color: rgba(255, 255, 255, 0.3);
+}
+.cards-hotel-favorite-active:disabled{
+  background: #E5E5E5;
 }
 .starring-range{
   width: 90px;
@@ -808,9 +834,15 @@ body{
 .cards-show-link:hover{
   background: #68A2CA;
 }
+.cards-show-link:focus{
+  background: #68A2CA;
+}
 .cards-show-link:active{
   background: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+.cards-show-link:disabled{
+  background: #E5E5E5;
 }
 .first-cards-link{
   background: #F2F2F2;
@@ -832,9 +864,6 @@ body{
 }
 
                 /***************** Модальное окно *************************/
-.modal-hidden{
-  display: none;
-}
 .modal{
   display: flex;
   flex-wrap: wrap;
@@ -844,6 +873,9 @@ body{
   margin: auto;
   padding: 36px 60px;
   border-radius: 30px;
+}
+.modal-hidden{
+  display: none;
 }
 .modal-header{
   margin: 0;
@@ -1021,9 +1053,15 @@ body{
 .modal-search-btn:hover{
   background: #68A2CA;
 }
+.modal-search-btn:focus{
+  background: #68A2CA;
+}
 .modal-search-btn:active{
   background: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+.modal-search-btn:disabled{
+  background: #E5E5E5;
 }
 
 
