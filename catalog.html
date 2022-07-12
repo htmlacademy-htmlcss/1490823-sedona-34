@@ -47,8 +47,14 @@
           <h1 class="catalog-header">Гостиницы Седоны</h1>
           <p class="breadcrumbs">
             <a href="index.html" class="breadcrumbs-icon">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z"/>
+              </svg>
               <span class="visually-hidden">Главная страница</span>
             </a>
+            <svg width="6" height="9" viewBox="0 0 6 9" class="arrow-right" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.05145 4.0749L1.25145 0.674902C1.05145 0.474902 0.651448 0.474902 0.351448 0.674902C0.0514485 0.874902 0.151448 1.2749 0.351448 1.4749L3.65145 4.4749L0.451448 7.4749C0.251448 7.6749 0.251448 8.0749 0.451448 8.2749C0.451448 8.3749 0.751448 8.4749 0.851448 8.4749C0.951449 8.4749 1.15145 8.3749 1.25145 8.2749L5.05145 4.8749C5.35145 4.6749 5.35145 4.2749 5.05145 4.0749Z" fill="white"/>
+            </svg>
             <span class="breadcrumbs-link">Гостиницы</span>
           </p>
           <form action="https://echo.htmlacademy.ru/courses" id="catalog-search-form" class="catalog-search-form" method="post">
@@ -88,12 +94,18 @@
             </fieldset>
             <fieldset class="catalog-search-item catalog-item-price">
               <legend class="catalog-item-legend">Стоимость, Р:</legend>
+              <div class="catalog-wrap catalog-field-left">
                 <input type="text" pattern="[0-9]{1,5}" name="min-price" value="0" placeholder="0" class="catalog-item-field catalog-field-left" id="catalog-search-min">
                 <label for="catalog-search-min" class=visually-hidden>Минимальная цена</label>
-                <input type="text" pattern="[0-9]{1,5}" name="max-price" value="9000" placeholder="9000" class="catalog-item-field catalog-field-right" id="catalog-search-max">
+                <span class="catalog-item-text">от</span>
+              </div>
+              <div class="catalog-wrap catalog-field-right">
+                <input type="text" pattern="[0-9]{1,5}" name="max-price" value="9000" placeholder="9000" class="catalog-item-field" id="catalog-search-max">
                 <label for="catalog-search-max" class="visually-hidden">Максимальная цена</label>
-                <input type="range" min="0" max="9000" step="1" value="7000" id="catalog-search-range">
-                <label for="catalog-search-range" class=" visually-hidden">Ползунок для цены</label>
+                <span class="catalog-item-text">до</span>
+              </div>
+              <input type="range" min="0" max="9000" step="1" value="7000" id="catalog-search-range" class="catalog-search-range">
+              <label for="catalog-search-range" class=" visually-hidden">Ползунок для цены</label>
             </fieldset>
             <fieldset class="catalog-search-item search-item-buttons">
               <legend class="visually-hidden">Вывод предложения отелей</legend>
