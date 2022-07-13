@@ -21,7 +21,7 @@
               <a href="index.html#about-sedona" class="nav-list-link">О Седоне</a>
             </li>
             <li class="nav-list-item">
-              <a href="catalog.html" class="nav-list-link">Гостиницы</a>
+              <a href="catalog.html" class="nav-list-hotels">Гостиницы</a>
             </li>
           </ul>
           <ul class="main-nav-list nav-user-list">
@@ -62,15 +62,18 @@
               <legend class="catalog-item-legend">Инфраструктура:</legend>
               <ul class="catalog-list-intro">
                 <li class="catalog-item-intro">
-                  <input type="checkbox" checked name="swimming-pool" class="catalog-item-input" id="swimming-pool">
+                  <span class="catalog-input-checkbox checkbox-checked"></span>
+                  <input type="checkbox" checked name="swimming-pool" class="visually-hidden" id="swimming-pool">
                   <label for="swimming-pool" class="catalog-checkin">Бассейн</label>
                 </li>
                 <li class="catalog-item-intro">
-                  <input type="checkbox" checked name="parking" class="catalog-item-input" id="catalog-search-parking">
+                  <span class="catalog-input-checkbox checkbox-checked"></span>
+                  <input type="checkbox" checked name="parking" class="visually-hidden" id="catalog-search-parking">
                   <label for="catalog-search-parking" class="catalog-checkin">Парковка</label>
                 </li>
                 <li class="catalog-item-intro">
-                  <input type="checkbox" name="wi-fi" class="catalog-item-input" id="catalog-search-input">
+                  <span class="catalog-input-checkbox"></span>
+                  <input type="checkbox" name="wi-fi" class="visually-hidden" id="catalog-search-input">
                   <label for="catalog-search-input" class="catalog-checkin">Wi-Fi</label>
                 </li>
               </ul>
@@ -79,15 +82,18 @@
               <legend class="catalog-item-legend">Тип Жилья:</legend>
               <ul class="catalog-list-intro">
                 <li class="catalog-item-intro">
-                  <input type="radio" checked name="accommodation-type" value="hotel" class="catalog-item-input" id="catalog-search-hotel">
+                  <span class="catalog-input-radio radio-checked"></span>
+                  <input type="radio" checked name="accommodation-type" value="hotel" class="visually-hidden" id="catalog-search-hotel">
                   <label for="catalog-search-hotel" class="catalog-checkin">Гостиница</label>
                 </li>
                 <li class="catalog-item-intro">
-                  <input type="radio" name="accommodation-type" value="motel" class="catalog-item-input" id="catalog-search-motel">
+                  <span class="catalog-input-radio"></span>
+                  <input type="radio" name="accommodation-type" value="motel" class="visually-hidden" id="catalog-search-motel">
                   <label for="catalog-search-motel" class="catalog-checkin">Мотель</label>
                 </li>
                 <li class="catalog-item-intro">
-                  <input type="radio" name="accommodation-type" value="apartments" class="catalog-item-input" id="catalog-search-app">
+                  <span class="catalog-input-radio"></span>
+                  <input type="radio" name="accommodation-type" value="apartments" class="visually-hidden" id="catalog-search-app">
                   <label for="catalog-search-app" class="catalog-checkin">Апартаменты</label>
                 </li>
               </ul>
