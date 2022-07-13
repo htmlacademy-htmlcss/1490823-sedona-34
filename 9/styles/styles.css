@@ -612,6 +612,12 @@ body{
   border: none;
   cursor: pointer;
 }
+.range-button-left:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.range-button-left:active{
+  border: 2px solid #83B3D3;
+}
 .range-button-right{
   display: block;
   width: 20px;
@@ -625,6 +631,12 @@ body{
   background: #FFFFFF;
   border: none;
   cursor: pointer;
+}
+.range-button-right:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.range-button-right:active{
+  border: 2px solid #83B3D3;
 }
 .catalog-item-text{
   display: block;
@@ -675,16 +687,23 @@ body{
   padding: 14px 0;
   width: 160px;
   background: none;
-  border: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   text-transform: inherit;
+  color: #FFFFFF;
+  border: 3px solid transparent;
 }
 .reset-button:hover{
-  background: #E5E5E5;
-  opacity: 0.3;
-  color: #000000;
+  color: rgba(255, 255, 255, 0.6);
+}
+.reset-button:focus{
+  color: rgba(255, 255, 255, 1);
+  border: 3px solid #83B3D3;
+}
+.reset-button:active{
+  border: 3px solid transparent;
+  color: rgba(255, 255, 255, 0.3);
 }
 .catalog-search-form{
   display: flex;
@@ -1029,6 +1048,7 @@ body{
   font-size: 18px;
   line-height: 1.16;
   outline-offset: 0;
+  outline: none;
   border: 3px solid #FFFFFF;
   border-radius: 4px;
 }
