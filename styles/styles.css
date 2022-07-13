@@ -22,7 +22,6 @@ body{
   font-size: 22px;
   line-height: 1.18;
   background: #F2F2F2;
-  position: relative;
 }
 *,
 *::before,
@@ -1064,7 +1063,7 @@ body{
   justify-content: space-between;
   align-items: center;
   max-width: 715px;
-  position: absolute;
+  position: fixed;
   top: 85px;
   left: 50%;
   z-index: 1;
