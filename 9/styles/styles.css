@@ -23,7 +23,9 @@ body{
   line-height: 1.18;
   background: #F2F2F2;
 }
-*{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 .container{
