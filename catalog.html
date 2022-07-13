@@ -104,8 +104,18 @@
                 <label for="catalog-search-max" class="visually-hidden">Максимальная цена</label>
                 <span class="catalog-item-text">до</span>
               </div>
-              <input type="range" min="0" max="9000" step="1" value="7000" id="catalog-search-range" class="catalog-search-range">
-              <label for="catalog-search-range" class=" visually-hidden">Ползунок для цены</label>
+              <div class="range-base">
+                <div class="range-base-left">
+                  <button class="range-button-left">
+                    <span class="visually-hidden">Бегунок слева</span>
+                  </button>
+                </div>
+                <div class="range-base-right">
+                  <button class="range-button-right">
+                    <span class="visually-hidden">Бегунок справа</span>
+                  </button>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="catalog-search-item search-item-buttons">
               <legend class="visually-hidden">Вывод предложения отелей</legend>
