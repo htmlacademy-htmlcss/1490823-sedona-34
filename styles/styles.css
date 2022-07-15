@@ -22,11 +22,18 @@ body{
   font-size: 22px;
   line-height: 1.18;
   background: #F2F2F2;
+  min-height: 1200px;
 }
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+:active,
+:hover,
+:focus{
+  outline: 0;
+  outline-offset: 0;
 }
 .container{
   max-width: 1200px;
@@ -246,7 +253,7 @@ body{
   color: #000000;
 }
 .reasons-inner-header{
-  margin: 0 0 30px 0;
+  margin: 30px 0;
   text-transform: uppercase;
 }
 .reasons-section-info{
@@ -260,49 +267,19 @@ body{
   margin: 30px 0;
 }
 .reasons-inner-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 400px;
-  padding: 182px 85px 80px;
+  padding: 80px 0;
   background: rgba(131, 179, 211, 0.12);
-  position: relative;
 }
 .inner-item-food{
   background: none;
 }
-.inner-item-house:before{
+.reason-inner-img{
   display: block;
-  width: 74px;
-  height: 72px;
-  position: absolute;
-  bottom: 230px;
-  left: 50%;
-  z-index: 1;
-  content: "";
-  background: url("../images/house.svg") center no-repeat;
-  transform: translate(-50%, 0);
-}
-.inner-item-food:before{
-  display: block;
-  width: 74px;
-  height: 70px;
-  position: absolute;
-  bottom: 230px;
-  left: 50%;
-  z-index: 1;
-  content: "";
-  background: url("../images/burger.svg") center no-repeat;
-  transform: translate(-50%, 0);
-}
-.inner-item-present:before{
-  display: block;
-  width: 64px;
-  height: 76px;
-  position: absolute;
-  bottom: 230px;
-  left: 50%;
-  z-index: 1;
-  content: "";
-  background: url("../images/present.svg") center no-repeat;
-  transform: translate(-50%, 0);
 }
 .sedona-town-img{
   width: 66.66%;
@@ -358,15 +335,28 @@ body{
   background: #E5E5E5;
 }
 .subscribe{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 94px 0;
+  background-color: #83B3D3;
   color: #FFFFFF;
-  background: url("../images/subscribe-background.jpg") center no-repeat;
-  text-align: center;
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .subscribe-catalog{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 94px 0;
   color: #000000;
-  text-align: center;
+  background: none;
 }
 .subscribe-header{
   margin: 0;
@@ -380,12 +370,16 @@ body{
   max-width: 40%;
   margin: 0 auto;
   padding-bottom: 46px;
+  text-align: center;
 }
 .subscribe-form{
+  width: 100%;
+  max-width: 800px;
   display: flex;
   justify-content: center;
 }
 .subscribe-input{
+  flex-grow: 1;
   font-family: inherit;
   width: 100%;
   max-width: 600px;
@@ -872,20 +866,23 @@ body{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .cards-item{
-  padding: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
   width: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
 }
 .card-item-link{
   display: block;
   width: 100%;
   text-decoration: none;
   color: #000000;
+}
+.card-item-img{
+  display: block;
 }
 .cards-item-header{
   font-weight: 700;
@@ -1112,7 +1109,7 @@ body{
   width: 100%;
   margin: 54px 0;
   display: grid;
-  grid-template-columns: auto 135px 155px 135px;
+  grid-template-columns: 135px 135px 155px 135px;
 }
 .modal-text{
   align-self: center;
@@ -1121,27 +1118,26 @@ body{
   line-height: 1.3;
 }
 .modal-date-field{
-  grid-column: 2/-1;
+  flex-grow: 1;
   padding: 15px 19px;
   background: #F2F2F2;
   font-family: inherit;
   font-size: 18px;
   line-height: 1.16;
+  color: #000000;
+  border-radius: 4px 0 0 4px;
   outline-offset: 0;
-  outline: none;
-  border: 3px solid #FFFFFF;
-  border-radius: 4px;
+  outline: 0;
+  border: 0;
 }
 .modal-date-field:hover{
   background: #E5E5E5;
 }
 .modal-date-field:focus{
   background: #E5E5E5;
-  border: 3px solid #82b3d3;
 }
 .modal-date-field:active{
   background: #FFFFFF;
-  border: 3px solid #000000;
 }
 .modal-info{
   margin: 10px 0;
@@ -1151,6 +1147,29 @@ body{
 }
 .modal-info-color{
   color: #FF5757;
+}
+.date-choice-wrap{
+  grid-column: 2/5;
+  display: flex;
+}
+.choice-date-btn{
+  display: block;
+  width: 50px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  padding: 16px;
+  background: #F2F2F2;
+  color: #A9A9A9;
+}
+.choice-date-btn:hover{
+  background: #E5E5E5;
+}
+.choice-date-btn:focus{
+  background: #E5E5E5;
+}
+.choice-date-btn:active{
+  background: #FFFFFF;
 }
 .modal-field-amount{
   width: 44px;
@@ -1174,8 +1193,10 @@ body{
   align-items: center;
   width: 132px;
 }
-.modal-plus-btn{
-  display: block;
+.modal-add-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 100%;
   border: none;
@@ -1183,21 +1204,12 @@ body{
   position: relative;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
+  color: #A9A9A9;
 }
-.modal-plus-btn::after{
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("../images/plus.svg") center no-repeat;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index:1;
-  transform: translate(-50%, -50%);
-  opacity: 0.3;
+.modal-add-btn:hover{
+  color: #000000;
 }
-.modal-minus-btn{
+.modal-remove-btn{
   display: block;
   width: 44px;
   height: 100%;
@@ -1208,19 +1220,11 @@ body{
   border: none;
   cursor: pointer;
   border-radius: 0 4px 4px 0;
+  background: #F2F2F2;
+  color: #A9A9A9;
 }
-.modal-minus-btn::after{
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("../images/minus.svg") center no-repeat;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index:1;
-  transform: translate(-50%, -50%);
-  opacity: 0.3;
+.modal-remove-btn:hover{
+  color: #000000;
 }
 .modal-attention-btn{
   display: block;
