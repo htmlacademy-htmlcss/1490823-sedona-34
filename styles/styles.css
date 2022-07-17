@@ -22,7 +22,6 @@ body{
   font-size: 22px;
   line-height: 1.18;
   background: #F2F2F2;
-  min-height: 1200px;
 }
 *,
 *::before,
@@ -36,7 +35,7 @@ body{
   outline-offset: 0;
 }
 .container{
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   background: #FFFFFF;
 }
@@ -85,23 +84,27 @@ body{
   list-style: none;
 }
 .left-list{
-  padding-left: 162px;
+  padding-left: 186px;
   flex-grow: 1;
 }
 .nav-list-link{
   padding: 24px 0;
-  margin: 0 24px;
+  margin: 0 34px 0 0;
   color: #000000;
   text-decoration: none;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
   position: relative;
 }
 .nav-list-main{
   padding: 24px 0;
-  margin: 0 24px;
+  margin: 0 34px 0 0;
   color: #000000;
   text-decoration: none;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
   position: relative;
 }
 .nav-list-main::after{
@@ -487,7 +490,7 @@ body{
                           /* стили для страницы каталога */
 
 .catalog-search{
-  margin-bottom: 65px;
+  margin-bottom: 50px;
   padding: 35px 0 70px 70px;
   background: url("../images/catalog-background.jpg") center no-repeat;
   background-size: cover;
@@ -780,9 +783,10 @@ body{
   padding: 0 70px;
 }
 .cards-view-inner{
-  margin-bottom: 57px;
+  margin-bottom: 55px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 .cards-view-header{
@@ -801,15 +805,17 @@ body{
   line-height: 1.2;
 }
 .hotel-select{
-  margin-right: 81px;
-  width: 247px;
+  margin-right: 78px;
+  width: 290px;
   border: 2px solid #E5E5E5;
   padding: 14px 20px;
   border-radius: 4px;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.6;
-  outline: none;
+  line-height: 1.16;
+  outline-offset: 0;
+  outline: 0;
 }
 .hotel-select:hover{
   border: 2px solid #68A2CA;
@@ -875,8 +881,12 @@ body{
   align-items: center;
   padding: 20px;
 }
+.cards-item:not(:nth-child(3n)){
+  margin-right: 18px;
+}
 .card-item-link{
   display: block;
+  margin-bottom: 16px;
   width: 100%;
   text-decoration: none;
   color: #000000;
@@ -885,9 +895,10 @@ body{
   display: block;
 }
 .cards-item-header{
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.66;
+  line-height: 1.16;
 }
 .cards-hotel-type{
   width: 140px;
@@ -967,19 +978,29 @@ body{
   background: #E5E5E5;
 }
 .starring-range{
-  width: 90px;
-  margin: 0 50px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 114px;
+  margin: 16px 46px 0 0;
+  padding: 10px 0;
+}
+.card-star{
+  display: block;
+  width: 18px;
   height: 17px;
-  background: url("../images/star.svg") center;
+}
+.card-star:not(:last-child){
+  margin-right: 6px;
 }
 .cards-hotel-range{
-  padding: 9px 0;
-  width: 160px;
+  margin: 16px 0 0;
+  padding: 9px 22px;
+  width: 140px;
   background: #F2F2F2;
   color: #000000;
   font-size: 16px;
   line-height: 1.25;
-  cursor: auto;
 }
 .cards-show-inner{
   padding: 30px 0;
